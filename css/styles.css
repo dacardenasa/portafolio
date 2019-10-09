@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -39,8 +41,8 @@ nav ul li a{
 }
 
 nav ul li a:hover {
+    transition: all 0.5s ease;
     background-color: #e67692;
-    
 }
 
 header img {
@@ -60,6 +62,7 @@ main .container img {
     margin: 0 auto;
     background-color: #F7F9F9;
     border-radius: 5px;
+    box-shadow: 2px 2px 10px #666;
 }
 
 .container section {
@@ -67,7 +70,7 @@ main .container img {
 }
 
 .container section h2 {
-    font-size: 20px;
+    font-size: 30px;
     color: #C0392B;
     text-align: center;
     padding-top: 20px;
@@ -87,7 +90,7 @@ main .container img {
     width: 33.3%;
     float: left;
     margin-top: 10px;
-    height: 450px;
+    height: 500px;
 }
 
 .container .title article img {
@@ -186,7 +189,8 @@ main .container img {
 
 .break-line article p {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
     line-height: 1.5;
     margin: 20px 20px;
 }
@@ -197,6 +201,75 @@ main .container img {
     font-size: 30px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.container .summary article .container-summary {
+    margin-top: 20px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.container .summary article .container-summary img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #C0392B;
+    border-radius: 50%;
+}
+
+.container .summary article .container-summary p {
+    padding: 0 50px;
+}
+
+.container .summary article .container-summary p span {
+    font-weight: bold;
+    color: #2471A3;
+    border-bottom: 2px solid  #2471A3; 
+}
+
+.container .contact {
+    text-align: center;
+}
+
+.container .contact ul {
+    padding: 10px 0;
+}
+
+.container .contact ul li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-spacing: 5px;
+    margin: 5px;
+}
+
+.container .contact ul li i {
+    color: #2471A3;
+}
+
+.container .contact ul li i a{
+    text-decoration: none;
+    color: #2471A3;
+}
+
+.container .projects {
+    text-align: center;
+}
+
+.container .projects ul {
+    padding: 10px 0;
+}
+
+.container .projects ul li {
+    list-style: none;
+}
+
+.container .projects ul li i a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-spacing: 5px;
+    color: #2471A3;
 }
 
 @media ( max-width: 768px ){
@@ -211,7 +284,7 @@ main .container img {
         text-align: center;
         width: 50%;
         margin-top: 10px;
-        height: 420px;
+        height: 500px;
     }
 
     .container section h2 {
@@ -248,6 +321,23 @@ main .container img {
 
     .container section h2 {
         font-size: 40px;
+    }
+
+    .break-line article p {
+        font-size: 25px;
+    }
+
+    .container .summary article .container-summary {
+        text-align: center;
+        height: 550px;
+    }
+
+    .container .summary article .container-summary img {
+        float: none;
+    }
+
+    .container .summary article .container-summary p {
+        font-size: 25px;
     }
     
 }
